@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "▶ Checking PSR-12 compliance using phpcs:"
+vendor/bin/phpcs --standard=PSR12 app/
+
+echo ""
+echo "▶ Fixing style issues using phpcbf:"
+vendor/bin/phpcbf --standard=PSR12 app/
